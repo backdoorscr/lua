@@ -11,7 +11,7 @@ end
 
 --[[ How to use 
     Simply use it as a fuction.
-    EX: presskey(Enum.KeyCode.Semicolon) or presskey(Enum.KeyCode.W)
+    EX: _G.presskey(Enum.KeyCode.Semicolon) or _G.presskey(Enum.KeyCode.W)
     -------------------------------------------------------------------
     pretty easy, right?
     Doesn't work with UIs, like nameless or inf yeild.
