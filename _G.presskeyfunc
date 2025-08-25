@@ -1,0 +1,18 @@
+_G.VirtualInputManager = game:GetService("VirtualInputManager")
+_G.DebugKey = nil
+_G.presskey = function(Key)
+    _G.DebugKey = Key
+    _G.VirtualInputManager:SendKeyEvent(true, Key, false, game)
+    wait(0.075)
+   _G.VirtualInputManager:SendKeyEvent(false, Key, false, game)
+end
+
+-- Needed fuction/var ^
+
+--[[ How to use 
+    Simply use it as a fuction.
+    EX: presskey(Enum.KeyCode.Semicolon) or presskey(Enum.KeyCode.W)
+    -------------------------------------------------------------------
+    pretty easy, right?
+    Doesn't work with UIs, like nameless or inf yeild.
+]]--
