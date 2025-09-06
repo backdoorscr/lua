@@ -6,11 +6,9 @@ local data = {
     username = identifyexecutor() .. 'Bot',
     avatar_url = 'https://imgs.search.brave.com/DPFpGKTVPXeozkdvyvbpW27YW_KapsZHMjS9dKucLVE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLmt5/bS1jZG4uY29tL2Vu/dHJpZXMvaWNvbnMv/ZmFjZWJvb2svMDAw/LzA1My84OTUvNjct/a2lkLmpwZw',
 }
-if _G.SendToWebhook == true then
-    http_request({
-        Url = webhook,
-        Method = 'POST',
-        Headers = { ['Content-Type'] = 'application/json' },
-        Body = game:GetService('HttpService'):JSONEncode(data),
-    })
-end
+http_request({
+    Url = webhook,
+    Method = 'POST',
+    Headers = { ['Content-Type'] = 'application/json' },
+    Body = game:GetService('HttpService'):JSONEncode(data),
+})
