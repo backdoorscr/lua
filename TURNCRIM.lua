@@ -6,5 +6,7 @@ local originalPosition = humanoidRootPart.CFrame
 local targetPosition = CFrame.new(-922.20, 95.33, 2134.80)
 
 humanoidRootPart.CFrame = targetPosition
+wait(0.1)
+humanoidRootPart.CFrame = CFrame.new(-923, 95.33, 2134.80)
 wait(0.175)
 humanoidRootPart.CFrame = originalPosition
